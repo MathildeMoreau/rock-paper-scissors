@@ -28,13 +28,29 @@ input{
     font-family: 'Fascinate', cursive;
 }
 
-#results{
+#results, #replay{
     display: flex;
     justify-content: center;
     text-align: center;
     width: 100%;
 }
 
-#result{
+#result, #replay-btn{
     background: #00AEE0;
+}
+
+#replay{
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Fascinate', cursive;
+}
+
+#replay-btn{
+    width: 30rem;
+    height: 4rem;
+    font-family: 'Fascinate', cursive;
+    font-size: 2rem;
 }

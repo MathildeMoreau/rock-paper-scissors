@@ -42,7 +42,7 @@ const determineWinner = (userChoice, computerChoice) => {
         result.value = 'Tied';
     } else if (userChoice !== computerChoice) {
         if (userChoice === 'rock') {
-            if (computerChoice === 'Scissors') {
+            if (computerChoice === 'scissors') {
                 result.value = 'User won !';
             } else {
                 result.value = 'User lost !';
@@ -50,7 +50,7 @@ const determineWinner = (userChoice, computerChoice) => {
         }
 
         if (userChoice === 'paper'){
-            if (computerChoice === 'Rock'){
+            if (computerChoice === 'rock'){
                 result.value = 'User won !';
             } else {
                 result.value = 'User lost !';
@@ -58,7 +58,7 @@ const determineWinner = (userChoice, computerChoice) => {
         }
 
         if (userChoice === "scissors"){
-            if(computerChoice === 'Paper'){
+            if(computerChoice === 'paper'){
                 result.value = 'User won !';
             } else {
                 result.value = 'User lost !';
@@ -75,6 +75,8 @@ const playGame = () => {
     let userchoice = getUserChoice();
     let computerChoice = getComputerChoice();
     determineWinner(userchoice, computerChoice);
+    console.log(userchoice);
+    console.log(computerChoice);
 }
 
 playGame();
